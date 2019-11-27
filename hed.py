@@ -15,7 +15,7 @@ def side_branch(x, factor):
 
 def hed():
     # Input
-    img_input = Input(shape=(,,3), name='input')
+    img_input = Input(shape=(None,None,3), name='input')
 
     # Block 1
     x = Conv2D(64, (3, 3), activation='relu', padding='same', name='block1_conv1')(img_input)
